@@ -5,12 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
 
-// This named query is used for the JpaRepository. It's not necessary with Hibernate implementation.
-@NamedQuery(
-		name="Food.findAllCategories",
-		query="SELECT DISTINCT category FROM Food")
 
 // Mark all entity classes with @Entity so that Hibernate knows about them.
 @Entity
