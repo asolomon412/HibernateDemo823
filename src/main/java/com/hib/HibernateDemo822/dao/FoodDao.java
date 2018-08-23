@@ -1,5 +1,7 @@
 package com.hib.HibernateDemo822.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
@@ -21,6 +23,14 @@ public class FoodDao {
 	
 	public Food findById(Long id) {
 		return em.find(Food.class, id);
+	}
+	
+	public List<Food> findAll() {
+		
+		// The select clause is optional in HQL. If omitted, it's basically
+		// like using SELECT *
+		// When creating the query we must specify the type of results: Food.class
+		return em.createQuery("FROM Food", Food.class).getResultList();
 	}
 	
 }
