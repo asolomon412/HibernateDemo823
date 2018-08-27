@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,6 +21,7 @@
 			    <label for="name">Name</label>
 			    <!-- pre-populate the input value from the existing food (if any) -->
 			     <input class="form-control" id="name" name="name" value="${food.name}" required minlength="2" autocomplete="off">
+			
 			</div>
 			<div class="form-group">
 			    <label for="category">Category</label>
@@ -32,9 +33,11 @@
 			    <input class="form-control" id="description" name="description" value="${food.description}" required minlength="3">
 			</div>
 			
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<input type="submit" class="btn btn-primary">
 			 <a href="/food" class="btn btn-link">Cancel</a>
 		</form>
+		
+		${requestScope.id }
 	</div>
 </body>
 </html>

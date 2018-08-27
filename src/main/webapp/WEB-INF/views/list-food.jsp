@@ -16,10 +16,10 @@
 <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-<%--  	<!-- With boostrap, pages should generally be surrounded with a container element. -->
+  	<!-- With boostrap, pages should generally be surrounded with a container element. -->
 	<div class="container">
-		<h1>Foods</h1>
-
+	<h1>Foods</h1>
+<%--	
 		<form class="form-inline" action="/food" autocomplete="off">
 			<label class="sr-only" for="keyword">Keyword</label> 
 			******Fix this!

@@ -16,5 +16,7 @@
 	<ul>
 		<li><a href="/food">Food</a></li>		
 	</ul>
+	
+	<h1>${header.cookie }</h1>
 </body>
 </html>

@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Repository;
 
 import com.hib.HibernateDemo822.entity.Food;
-
+/// ***** We are no longer using this!
 @Repository
 // DAOs must be transactional in order to use the EntityManager to write.
 // This means that a transaction is created every time a method runs here.
